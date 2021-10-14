@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+body {
+    font-family: 'Neucha', cursive;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+}
+.h button {
+    margin-top: 200px;
+}
+span {
+    background-color: sandybrown;
+    padding: 0 10px;
+}
+button {
+    font-family: inherit;
+    background-color: sandybrown;
+    cursor: pointer;
+}
+.container {
+    margin: 0 auto;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tanah {
+    width: 30%;
+    height: 200px;
+    position: relative;
+    overflow-y: hidden;
+}
+.tanah::after {
+    content: '';
+    background-color: #522e24;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 25% 25% 0 0;
+}
+.tikus {
+    height: 200px;
+    background-image: url(img/mole-removebg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 150px;
+    opacity: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+.tikus-muncul .tikus {
+    margin-top: 0;
+    opacity: 1;
+}
